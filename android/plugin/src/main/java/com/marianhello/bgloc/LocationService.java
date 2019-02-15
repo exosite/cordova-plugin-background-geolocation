@@ -450,7 +450,7 @@ public class LocationService extends Service {
                 }
             }
 
-            String url = config.getUrl();
+            String url = config.getUrl() + "?platform=android";
             log.debug("Posting json to url: {} headers: {}", url, config.getHttpHeaders());
             int responseCode;
 
